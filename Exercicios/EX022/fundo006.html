@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
     <style>
         body 
     {
+        height: 100vh;
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+        background-size: cover;
+        /* SHORTHAND - BACKGROUND
+        SIMPLIFICANDO AS FORMATAÇÕES DO BODY ACIMA
+        color > image > position > repeat > [size]
+        > attachment (INFELIMENTE ATÉ O MOMENTO O SIZE NÃO FUNCIONA SIMPLIFICADO, POSSA QUE FUTURAMENTE FUNCIONE MAS NO MOMENTO AINDA NÃO!)
+        COM A SIMPLIFICAÇÃO DO SHORHAND, AO INVÉS DE FICAR ASSIM:
         height: 100vh;
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover
+        FICARÁ COMO O DE CIMA!
+        */
     }
     main
     {   
