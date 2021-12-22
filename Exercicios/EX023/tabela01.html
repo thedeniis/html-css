@@ -13,22 +13,22 @@
              table
              {
                  width: 400px;
+                 height: 400px;
                  border-collapse: collapse;
-             }
-             tr.linha
-             {
-                 background-color: gray;
              }
              td
              {
                  border: 1px solid black;
                  padding: 8px;
+                 text-align: center; /* ALINHAMENTO HORIZONTAL DOS A, B e C*/
+                 vertical-align: center;
              }
-             td.dado
+             .numero
              {
-                background-color: yellow;
+                 text-align:right; /* EU CONSIGO COLOCAR QUALQUER NUMERO DA TABELA NA DIREITA, ESQUERDA, CENTRO, PARA CIMA, MEIO ou PARA BAIXO. Usando uma CLASS no que eu quero modificar */
              }
     </style>
+
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
@@ -46,21 +46,21 @@
             <td>C1</td>
         </tr>
         
-        <tr class="linha">
+        <tr class>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         
         <tr>
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <td>C4</td>
         </tr>
     </table>
