@@ -32,6 +32,14 @@
             background-color: grey;
             color: white;
         }
+        tbody > tr:nth-child(odd) /* ODD - IMPAR e EVEN - PAR ---- FAZEM PARTE DO EFEITO ZEBRADO. Lembrando que nesse caso que nosso fundo é de cor BRANCA, não seria necessário colocar background WHITE, colocariamos se casso tivesse uma imagem de fundo. TAMBÉM PODERIAMOS SUBSTITUIR O 'ODD E EVEN' Por "2n" que a cada 2 linhas, ele marca com cor a tabela */
+        {
+            background-color: white;
+        }
+        tbody > tr:nth-child(even)
+        {
+            background-color: lightgray;
+        }
         td.num
         {
             text-align: right;
