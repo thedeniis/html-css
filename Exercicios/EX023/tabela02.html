@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        /* 
+CABEÇALHO:
+Para inserir um cabeçalho fixo, ou seja; temos uma tabela que ao descer a barra de rolagem, os titulos não acompanham, fica para cima. Com os comandos em CSS:
+------------------------
+TABLE
+{
+Position: Relative
+}
+
+thead > tr > th
+{
+position: sticky
+top: -1px
+background-color: #383838 9neste caso essa coe foi escolhida) 
+} 
+*/
         body
         {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,6 +30,7 @@
         {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th
         {
@@ -29,8 +46,14 @@
         }
         thead, tfoot
         {
-            background-color: grey;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th
+        {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
         tbody > tr:nth-child(odd) /* ODD - IMPAR e EVEN - PAR ---- FAZEM PARTE DO EFEITO ZEBRADO. Lembrando que nesse caso que nosso fundo é de cor BRANCA, não seria necessário colocar background WHITE, colocariamos se casso tivesse uma imagem de fundo. TAMBÉM PODERIAMOS SUBSTITUIR O 'ODD E EVEN' Por "2n" que a cada 2 linhas, ele marca com cor a tabela */
         {
