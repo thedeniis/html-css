@@ -32,10 +32,7 @@
     }
     .cinzaeditado
     {
-        text-align: left;
-    }
-    .cinzaeditado2
-    {
+        background-color: rgba(105, 104, 104, 0.521);
         text-align: left;
     }
     .exatas
@@ -45,14 +42,6 @@
     .humanas
     {
         color: black;
-    }
-    .cinza
-    {
-        color: grey;
-    }
-    .cinza2
-    {
-        color: grey;
     }
 </style>
 </head>
@@ -64,15 +53,15 @@
         <caption>Boletim</caption>
         <thead>
             <tr>
-                <th rowspan="2" scope="rowgroup">Área</th>
-                <th rowspan="2" scope="rowgroup">Disciplinas</th>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2" scope="rowgroup">Média</th>
+                <th rowspan="2" scope="rowgroup" class="cinzaeditado">Área</th>
+                <th rowspan="2" scope="rowgroup" class="cinzaeditado">Disciplinas</th>
+                <th colspan="2" scope="colgroup" class="cinzaeditado">Notas</th>
+                <th rowspan="2" scope="rowgroup" class="cinzaeditado">Média</th>
             </tr>
         
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th class="cinzaeditado">Nota 1</th>
+                <th class="cinzaeditado">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -106,7 +95,7 @@
 
             <tr>
                 <th colspan="4" class="cinzaeditado" scope="colgroup">Média de Exatas</th>
-                <td class="cinza2">0.0</td>
+                <td>0.0</td>
             </tr>
 
             <tr>
@@ -125,8 +114,8 @@
             </tr>
 
             <tr>
-                <th colspan="4" class="cinzaeditado2" scope="colgroup">Média de Humanas</th>
-                <td class="cinza">0.0</td>
+                <th colspan="4" class="cinzaeditado" scope="colgroup">Média de Humanas</th>
+                <td>0.0</td>
             </tr>
         </tbody>
                
